@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721C7C341EE84D100082755B /* EmptyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C331EE84D100082755B /* EmptyHeaderView.swift */; };
+		721C7C361EE84D820082755B /* EmptyHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C351EE84D820082755B /* EmptyHeaderViewModel.swift */; };
+		721C7C381EE851FA0082755B /* DummyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C371EE851FA0082755B /* DummyHeaderView.swift */; };
+		721C7C3A1EE852730082755B /* DummyHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C391EE852730082755B /* DummyHeaderViewModel.swift */; };
+		721C7C3C1EE853200082755B /* DummyHeaderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C3B1EE853200082755B /* DummyHeaderDataSource.swift */; };
+		721C7C5C1EE863470082755B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C5B1EE863470082755B /* ThirdViewController.swift */; };
+		721C7C5E1EE8657C0082755B /* RandomColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C5D1EE8657C0082755B /* RandomColorCell.swift */; };
+		721C7C601EE865A20082755B /* RandomColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C5F1EE865A20082755B /* RandomColorViewModel.swift */; };
+		721C7C621EE866AC0082755B /* CustomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C7C611EE866AC0082755B /* CustomDataSource.swift */; };
 		F13B5C801ED601A5002A50AE /* QuickDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13B5C761ED601A5002A50AE /* QuickDataSource.framework */; };
 		F13B5C991ED6030D002A50AE /* QuickDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13B5C971ED6030D002A50AE /* QuickDataSourceTests.swift */; };
 		F13B5C9D1ED60443002A50AE /* CellBindingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13B5C9C1ED60443002A50AE /* CellBindingType.swift */; };
@@ -61,6 +70,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		721C7C331EE84D100082755B /* EmptyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyHeaderView.swift; sourceTree = "<group>"; };
+		721C7C351EE84D820082755B /* EmptyHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyHeaderViewModel.swift; sourceTree = "<group>"; };
+		721C7C371EE851FA0082755B /* DummyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyHeaderView.swift; sourceTree = "<group>"; };
+		721C7C391EE852730082755B /* DummyHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyHeaderViewModel.swift; sourceTree = "<group>"; };
+		721C7C3B1EE853200082755B /* DummyHeaderDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyHeaderDataSource.swift; sourceTree = "<group>"; };
+		721C7C5B1EE863470082755B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		721C7C5D1EE8657C0082755B /* RandomColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorCell.swift; sourceTree = "<group>"; };
+		721C7C5F1EE865A20082755B /* RandomColorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorViewModel.swift; sourceTree = "<group>"; };
+		721C7C611EE866AC0082755B /* CustomDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDataSource.swift; sourceTree = "<group>"; };
 		F13B5C761ED601A5002A50AE /* QuickDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13B5C7F1ED601A5002A50AE /* QuickDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13B5C911ED60305002A50AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +131,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		721C7C631EE86B030082755B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F13B5CC21ED60D39002A50AE /* FirstViewController.swift */,
+				F13B5CC41ED60D39002A50AE /* SecondViewController.swift */,
+				721C7C5B1EE863470082755B /* ThirdViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		721C7C641EE86B100082755B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				721C7C391EE852730082755B /* DummyHeaderViewModel.swift */,
+				F1E8C7D01ED6192B0034C8A5 /* DummyViewModel.swift */,
+				721C7C5F1EE865A20082755B /* RandomColorViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		721C7C651EE86B230082755B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1E8C7CE1ED6191D0034C8A5 /* DummyCell.swift */,
+				721C7C5D1EE8657C0082755B /* RandomColorCell.swift */,
+				721C7C371EE851FA0082755B /* DummyHeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		721C7C661EE86B3D0082755B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F1E8C7D31ED61AB70034C8A5 /* DummyDataSource.swift */,
+				721C7C3B1EE853200082755B /* DummyHeaderDataSource.swift */,
+				721C7C611EE866AC0082755B /* CustomDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
 		F13B5C6C1ED601A4002A50AE = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +202,8 @@
 				F13B5CA11ED606E6002A50AE /* CellLoadableType.swift */,
 				F13B5C9C1ED60443002A50AE /* CellBindingType.swift */,
 				F13B5C9F1ED604E5002A50AE /* CellViewModelBinderType.swift */,
+				721C7C331EE84D100082755B /* EmptyHeaderView.swift */,
+				721C7C351EE84D820082755B /* EmptyHeaderViewModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -160,16 +220,15 @@
 		F13B5CBB1ED60D39002A50AE /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				721C7C661EE86B3D0082755B /* DataSource */,
+				721C7C651EE86B230082755B /* Views */,
+				721C7C641EE86B100082755B /* ViewModels */,
+				721C7C631EE86B030082755B /* ViewControllers */,
 				F13B5CBD1ED60D39002A50AE /* Assets.xcassets */,
 				F13B5CBE1ED60D39002A50AE /* LaunchScreen.storyboard */,
 				F13B5CC01ED60D39002A50AE /* Main.storyboard */,
 				F13B5CC31ED60D39002A50AE /* Info.plist */,
 				F13B5CBC1ED60D39002A50AE /* AppDelegate.swift */,
-				F13B5CC21ED60D39002A50AE /* FirstViewController.swift */,
-				F13B5CC41ED60D39002A50AE /* SecondViewController.swift */,
-				F1E8C7CE1ED6191D0034C8A5 /* DummyCell.swift */,
-				F1E8C7D01ED6192B0034C8A5 /* DummyViewModel.swift */,
-				F1E8C7D31ED61AB70034C8A5 /* DummyDataSource.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -321,11 +380,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13B5C9E1ED60447002A50AE /* DataSourceType.swift in Sources */,
+				721C7C361EE84D820082755B /* EmptyHeaderViewModel.swift in Sources */,
 				F13B5CD21ED60E9B002A50AE /* TableViewDataSource.swift in Sources */,
 				F13B5C9D1ED60443002A50AE /* CellBindingType.swift in Sources */,
 				F13B5CA01ED604E5002A50AE /* CellViewModelBinderType.swift in Sources */,
 				F13B5CD81ED616CD002A50AE /* TableViewDelegate.swift in Sources */,
 				F13B5CA21ED606E6002A50AE /* CellLoadableType.swift in Sources */,
+				721C7C341EE84D100082755B /* EmptyHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +402,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721C7C621EE866AC0082755B /* CustomDataSource.swift in Sources */,
 				F13B5CCB1ED60D39002A50AE /* SecondViewController.swift in Sources */,
+				721C7C381EE851FA0082755B /* DummyHeaderView.swift in Sources */,
+				721C7C5C1EE863470082755B /* ThirdViewController.swift in Sources */,
+				721C7C3C1EE853200082755B /* DummyHeaderDataSource.swift in Sources */,
+				721C7C5E1EE8657C0082755B /* RandomColorCell.swift in Sources */,
 				F1E8C7D41ED61AB70034C8A5 /* DummyDataSource.swift in Sources */,
 				F13B5CC51ED60D39002A50AE /* AppDelegate.swift in Sources */,
 				F1E8C7CF1ED6191D0034C8A5 /* DummyCell.swift in Sources */,
 				F1E8C7D11ED6192B0034C8A5 /* DummyViewModel.swift in Sources */,
+				721C7C601EE865A20082755B /* RandomColorViewModel.swift in Sources */,
+				721C7C3A1EE852730082755B /* DummyHeaderViewModel.swift in Sources */,
 				F13B5CC91ED60D39002A50AE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

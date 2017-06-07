@@ -32,9 +32,9 @@ class DummyDataSource: DataSourceType {
     
     var items: [(CellBindingType, [CellBindingType])] {
         return [
-            (DummyViewModel(label: ""),[DummyViewModel(label: "Foo"),
+            (EmptyHeaderViewModel(),[DummyViewModel(label: "Foo"),
                                         DummyViewModel(label: "Bar")]),
-            (DummyViewModel(label: ""),[DummyViewModel(label: "Bar"),
+            (EmptyHeaderViewModel(),[DummyViewModel(label: "Bar"),
                                         DummyViewModel(label: "Foo")])
         ]
     }
