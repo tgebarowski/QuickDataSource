@@ -26,19 +26,27 @@
 //
 
 import UIKit
+import QuickDataSource
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet private weak var tableView: UITableView!
 
+    lazy var tableDataSource: TableViewDataSource = {
+        return TableViewDataSource(items: DummyHeaderDataSource())
+    }()
+    
+    fileprivate var tableViewDeleagte: TableViewDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.register(DummyHeaderView.self,
+                           forHeaderFooterViewReuseIdentifier: String(describing: DummyHeaderView.self))
+        tableView.estimatedSectionHeaderHeight = 20.0
+        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        tableView.dataSource = tableDataSource
+        tableViewDeleagte = TableViewDelegate(tableViewDataSource: tableDataSource)
+        tableView.delegate = tableViewDeleagte
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

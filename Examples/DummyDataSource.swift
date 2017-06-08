@@ -30,22 +30,12 @@ import QuickDataSource
 
 class DummyDataSource: DataSourceType {
     
-    let items: [DummyViewModel] = [DummyViewModel(label: "Foo"),
-                                   DummyViewModel(label: "Bar")]
-    
-    var sectionsCount: Int {
-        return 1
-    }
-    
-    func itemsCount(section: Int) -> Int {
-        return items.count
-    }
-    
-    func item(index: Int, section: Int) -> CellBindingType {
-        return items[index]
-    }
-    
-    func item(section: Int, kind: String?) -> CellBindingType? {
-        return nil
+    var items: [(CellBindingType, [CellBindingType])] {
+        return [
+            (EmptyHeaderViewModel(),[DummyViewModel(label: "Foo"),
+                                        DummyViewModel(label: "Bar")]),
+            (EmptyHeaderViewModel(),[DummyViewModel(label: "Bar"),
+                                        DummyViewModel(label: "Foo")])
+        ]
     }
 }

@@ -29,6 +29,7 @@ import Foundation
 
 public protocol DataSourceType: class {
     
+    var items: [(CellBindingType, [CellBindingType])] { get }
     var sectionsCount: Int { get }
     func itemsCount(section: Int) -> Int
     func item(index: Int, section: Int) -> CellBindingType
@@ -40,11 +41,27 @@ public protocol DataSourceType: class {
 public extension DataSourceType {
     
     var isEmpty: Bool {
-        for section in 0..<sectionsCount {
-            if itemsCount(section: section) > 0 {
-                return false
-            }
-        }
-        return true
+        return items.count == 0 || items.first?.1.count == 0
+    }
+}
+
+public extension DataSourceType {
+    
+    var items: [(CellBindingType, [CellBindingType])] { return [] }
+    
+    var sectionsCount: Int {
+        return items.count
+    }
+    
+    func itemsCount(section: Int) -> Int {
+        return items[section].1.count
+    }
+    
+    func item(index: Int, section: Int) -> CellBindingType {
+        return items[section].1[index]
+    }
+    
+    func item(section: Int, kind: String?) -> CellBindingType? {
+        return items[section].0
     }
 }

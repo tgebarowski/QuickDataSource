@@ -41,4 +41,3 @@ class FirstViewController: UIViewController {
         tableView.dataSource = tableDataSource
     }
 }
-

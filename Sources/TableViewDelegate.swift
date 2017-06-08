@@ -54,9 +54,6 @@ open class TableViewDelegate : NSObject, UITableViewDelegate {
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
-        guard let _ = tableViewDataSource.tableView(tableView, viewForHeaderInSection: section) else {
-            return 0
-        }
         return UITableViewAutomaticDimension
     }
     
