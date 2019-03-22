@@ -126,7 +126,7 @@ struct DateViewModel: Equatable, Hashable {
     let date: String
 }
 
-extension DummyViewModel: ItemType  {
+extension DateViewModel: ItemType  {
     func cellToViewModelBinder() -> CellToViewModelBinderType {
         return CellToViewModelBinder<DateCell>(viewModel: self)
     }
@@ -136,7 +136,7 @@ class DateCell: UITableViewCell {
     @IBOutlet fileprivate weak var dateLabel: UILabel!
 }
 
-extension DummyCell: CellLoadableType {
+extension DateCell: CellLoadableType {
     
 func load(viewModel: DateViewModel) {
    dateLabel.text = viewModel.date
