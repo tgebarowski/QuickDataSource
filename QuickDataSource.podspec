@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'QuickDataSource'
-  s.version = '1.0.0'
+  s.version = '1.1.0'
   s.license = 'MIT'
   s.summary = 'μFramework for writing testable Data Sources and ViewModels for UITableView and UICollectionView.'
   s.homepage = 'https://github.com/tgebarowski/QuickDataSource'
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.source_files = 'Sources/**/*.swift'
   s.requires_arc = true
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end
